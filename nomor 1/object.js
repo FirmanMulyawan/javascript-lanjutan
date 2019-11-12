@@ -1,4 +1,5 @@
 // membuat object literal
+// problem : tidak efektif untuk object yang banyak
 // let mahasiswa = {
 //     nama: 'Sandhika',
 //     energi: 10,
@@ -13,6 +14,7 @@
 // ==========================================
 
 // ======== function declaration =============
+
 // function Mahasiswa(nama, energi) {
 //     let mahasiswa = {};
 //     mahasiswa.nama = nama;
