@@ -1,0 +1,46 @@
+Higher Order Function = Function yang beroperasi pada function yang lain. Baik itu digunakan dalam argumen, maupun sebagai return value. 
+- javascript memperlakukan function sebagai object dan object merupakan value sama seperti integer atau string maka function bisa kita simpan sebagai argumen amupun return value dari sebuah function yang lain. 
+=======================================
+contohnya:
+// function kerjakanTugas = Higher Order Function
+// argument selesai disebut callbeck
+function kerjakanTugas(matakuliah, selesai){
+    console.log(`Mulai mengerjakan tugas ${matakuliah}...`);
+    selesai();
+}
+
+function selesai(){
+    alert(`selesai mengerjakan tugas!`);
+}
+
+kerjakanTugas('pemrograman web', selesai);
+========================================
+
+=========================================
+contoh lainnya:
+// setTimeout memiliki 2 argument yaitu function dan waktu tunggu
+setTimeout (function (){
+    console.log('Hello World');
+}, 1000);
+
+========================================
+
+========================================
+contoh lainnya:
+const tombol = document.querySelector('.submit');
+
+tombol.addEventListener('click', function(){
+    console.log('tombol ditekan!');
+});
+========================================
+
+=========================================
+kegunaan Higher Order Function
+- abstraksi
+    kode yang kita buat bisa lebih sederhana dan menyembunyikan kerumitan
+=======================================
+
+contoh Higer Order Function
+- Array.prototype.map()
+- Array.prototype.filter()
+- Array.prototype.reduce()
